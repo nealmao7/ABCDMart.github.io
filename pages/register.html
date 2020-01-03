@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>註冊</title>
+</head>
+	<link rel="stylesheet" href="css/register.css">
+<body>
+	<nav class="nav" style="height: 41px;">
+		<div id="toppest">	
+    		<div class="notbutton1"  
+    title="welcome";
+    onclick="location.href = ''"
+    onmouseover="this.style.color='black'";
+    onmouseout="this.style.color='#878787'";>
+                Welcome to ABCD Mart!
+             </div>	
+             <div>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto" class="button-loginform">登入會員</button>
+        <div id="id01" class="modal">
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imginside">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <div class="container">
+          <label for="uname"><b>帳號</b></label>
+          <input type="text" name="uname" placeholder="Enter Username" required>
+          <label for="psw"><b>密碼</b></label>
+          <input type="password" name="psw" placeholder="Enter Password" required>
+          <button type="submit">登入</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember">記住帳密
+          </label>
+        </div>
+        <div class="container" style="background-color: #f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="button-cancel">取消</button>
+          <span class="psw">忘記<a href="">密碼</a></span>
+                             
+        </div>
+      </form>
+    </div>
+		</div>
+	</nav>
+	<nav class="nav" >				
+		<ul align="center">
+			<a href="project.html"><img src="img/logo.png" class="logo"></a>
+			<a href="project.html" class="zz"><p onmouseover="this.style.color='black'";
+    		onmouseout="this.style.color='#878787'"; class="seris">&emsp;首頁&emsp;</p></a>
+			<a href="goods.html" class="zz"><p onmouseover="this.style.color='black'";
+    		onmouseout="this.style.color='#878787'"; class="seris">&emsp;商品&emsp;</p></a>
+			
+			<a href="aboutus.html" class="zz"><p onmouseover="this.style.color='black'";
+    		onmouseout="this.style.color='#878787'"; class="seris">&emsp;關於我們&emsp;</p></a>
+            <a href="shopping.html" class="zz"><p onmouseover="this.style.color='black'";
+    		onmouseout="this.style.color='#878787'"; class="seris">&emsp;購物車&emsp;</p></a>
+		</ul>		
+	</nav>
+  <div class="legend">
+    <form>
+      <fieldset style="border-radius: 5px; margin-top: 10%; margin-bottom: 15%;">
+        <legend>註冊</legend>
+        <span class="txt">帳號:</span><input type="text" name="account">
+        <span class="txt">密碼:</span><input type="password" name="password">
+        <span class="txt">名字:</span><input type="text" name="name">
+        <span class="txt">電話:</span><input type="text" name="phone">
+        <span class="txt">信箱:</span><input type="text" name="email">
+        <span class="txt">地址:</span><input type="text" name="address">
+        <input type="submit" value="註冊" style="margin-left: 45%;" class="bbutton">
+        <input type="reset" value="重填" class="bbutton">
+      </fieldset>
+    </form>
+  </div>
+	<hr>
+	<footer>
+		<a href="https://www.facebook.com/"><img src="img/fb.png" class="fb"></a>
+		<a href="https://www.instagram.com/happyhappyjay/"><img src="img/ig.png" class="ig"></a>
+		<div class="footer">
+			<a href="QandA.html" style="color: black;">我們的Q&A</a><br>
+			聯絡資訊:02-2651-0740<br>
+			服務時間:早上8點-晚上10點<br>
+			Copyright@ABCD Mart<br>
+		</div>
+	</footer>
+	<script type="text/javascript">
+	  var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+	</script>
+</body>
+</html>
